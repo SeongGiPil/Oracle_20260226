@@ -1,0 +1,22 @@
+SELECT NAME,PAY,BONUS,PAY+BONUS
+FROM PROFESSOR;
+
+
+SELECT NAME,PAY, NVL(BONUS,0),PAY+NVL(BONUS,0)
+FROM PROFESSOR;
+
+
+SELECT NAME,BONUS,NVL2(BONUS,10000,0)
+FROM PROFESSOR;
+
+--DECODE:자바의 조건문(IF)
+--DECODE(컬럼명,"조건값","조건이랑 같을 때 출력","조건이랑 다를때 출력',조건 1','조건2'모두 그외)
+
+SELECT
+NAME,
+DECODE (GRADE,4,'졸업반',GRADE||'학년'),
+DECODE (GRADE,4,'졸업반',GRADE||'3','고학년','저학년')
+FROM STU;
+
+
+
