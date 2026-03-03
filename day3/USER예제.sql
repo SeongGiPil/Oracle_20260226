@@ -1,0 +1,7 @@
+SELECT * FROM BOOK;
+SELECT * FROM CUSTOMER;
+SELECT * FROM ORDERS;
+
+
+
+--1.구매자이름,책이름,구매일출력
